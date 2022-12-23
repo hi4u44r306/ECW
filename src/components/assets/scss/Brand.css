@@ -16,7 +16,7 @@
     transition: 0.2s linear;
   }
 }
-
+/* 
 .brand span:nth-child(1) {
   color: red;
   //text-shadow: 1px 0px 0px red;
@@ -66,7 +66,7 @@
 .brand span:nth-child(12) {
   color: #4062bb;
   //text-shadow: 1px 0px 0px #4062bb;
-}
+} */
 
 @media only screen and (max-width: 1210px) {
   .brand {

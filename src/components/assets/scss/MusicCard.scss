@@ -1,3 +1,20 @@
+.product-name {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: var(--smallfont);
+  text-align: start;
+  cursor: default;
+  user-select: none;
+}
+.price {
+  color: rgb(136, 136, 136);
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: var(--smallfont);
+  text-align: start;
+  cursor: default;
+  user-select: none;
+}
 .gamesection {
   position: fixed;
   top: 0;
@@ -9,6 +26,7 @@
   height: fit-content;
 }
 .testbutton {
+  position: fixed;
   display: flex;
   align-items: center;
   align-content: center;
@@ -22,25 +40,16 @@
   padding: 10px;
   cursor: pointer;
 }
-.testbutton > span {
-  margin-right: 5px;
+.carticon {
+  width: 25px !important;
+  cursor: pointer;
 }
-.testbutton:hover {
-  // box-shadow: 0 0 15px rgba(0, 132, 255, 0.629);
-  transition: 200ms;
-}
-.playicon {
-  color: rgb(249, 42, 27);
-}
-.playicon:hover {
+.carticon:hover {
   // transform-origin: 50% 50%;
   animation: jump 0.5s linear alternate infinite;
 }
 .circleicon {
   color: rgb(0, 132, 255);
-}
-.mobile {
-  display: none;
 }
 .musicbanner {
   display: flex;
@@ -109,7 +118,7 @@
   border-radius: 20px;
   width: 230px;
   padding: 15px;
-  margin: 15px;
+  margin: 5px;
   background-color: rgb(255, 255, 255);
   .music-card-cover {
     position: relative;
@@ -117,7 +126,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 20px;
     img {
       width: 180px;
       height: auto;
@@ -156,22 +165,23 @@
 
 @media only screen and (max-width: 545px) {
   .music-card {
-    width: 400px;
+    width: 150px;
+    padding: 10px;
     .music-card-cover {
       img {
         width: 80px;
-        height: 80px;
+        height: auto;
       }
     }
   }
-  .mobile {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .web {
-    display: none;
-  }
+  // .mobile {
+  //   display: flex;
+  //   align-items: center;
+  //   align-content: center;
+  //   justify-content: center;
+  //   flex-wrap: wrap;
+  // }
+  // .web {
+  //   display: none;
+  // }
 }

@@ -11,7 +11,7 @@ const Categories = () => {
     return (
         <Containerfull>
             <div className={"Playlist"}>
-                <div className='playlisttitle'> {typeOfPlaylist} </div>
+                {/* <div className='playlisttitle'> {typeOfPlaylist} </div> */}
                 <div className="Playlist-container">
                     {
                         playlists.map((item)=>(

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='footercontainer'>
       <span>
-        Copyright (c)
+        Sunny.Victor copyright reserved
       </span>
     </div>
   )

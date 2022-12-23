@@ -7,18 +7,8 @@ class Brand extends React.Component {
         return (
             <div className={"brand"}>
                 <div as={Link} to={"/home"}>
-                    <span>A</span>
-                    <span>L</span>
-                    <span>A</span>
-                    <span>N</span>
-                    <span> </span>
-                    <span>E</span>
-                    <span>N</span>
-                    <span>G</span>
-                    <span>L</span>
-                    <span>I</span>
                     <span>S</span>
-                    <span>H</span>
+                    <span>V</span>
                 </div>
             </div>
         );

@@ -6,13 +6,13 @@
   font-family: "Nunito", sans-serif;
   font-weight: bolder;
   font-size: var(--smallfont);
-  text-align: center;
+  text-align: start;
 }
 .marqueename {
   font-family: "Nunito", sans-serif;
   font-weight: bolder;
   font-size: var(--smallfont);
-  text-align: center;
+  text-align: start;
   color: red;
 }
 .timeplayed {
@@ -21,7 +21,7 @@
   color: red;
   font-weight: 700;
   font-size: var(--smallfont);
-  text-align: center;
+  text-align: start;
   justify-content: space-around;
   cursor: default;
   user-select: none;
@@ -30,18 +30,10 @@
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: var(--mediumfont);
-  text-align: center;
+  text-align: start;
   cursor: default;
   user-select: none;
   margin: 10px;
-}
-.song-name {
-  font-family: "Nunito";
-  font-weight: 700;
-  font-size: var(--smallfont);
-  text-align: center;
-  cursor: default;
-  user-select: none;
 }
 .author-name {
   font-family: "Nunito", sans-serif;
@@ -55,14 +47,14 @@
   font-family: "Nunito", sans-serif;
   font-weight: bolder;
   font-size: 1.2rem;
-  text-align: center;
+  text-align: start;
   color: red;
 }
 .quizlabel {
   font-family: "Nunito";
   font-weight: 700;
   font-size: var(--smallfont);
-  text-align: center;
+  text-align: start;
   cursor: default;
   user-select: none;
   margin-right: 10px;
@@ -80,7 +72,7 @@
   .emptysong-name {
     font-weight: bolder;
     font-size: 1rem;
-    text-align: center;
+    text-align: start;
     color: red;
   }
 }

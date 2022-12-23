@@ -9639,6 +9639,22 @@ let productDB =[
         img: "earring.jfif",
         type: "Earring",
     },
+    {
+        category:"耳環",
+        name:"耳環2",
+        price:200,
+        description: "This is 耳環2",
+        img: "earring.jfif",
+        type: "Earring",
+    },
+    {
+        category:"耳環",
+        name:"耳環3",
+        price:200,
+        description: "This is 耳環3",
+        img: "earring.jfif",
+        type: "Earring",
+    },
 
 
     // 戒指 //
@@ -9647,7 +9663,7 @@ let productDB =[
         name:"戒指1",
         price:200,
         description: "This is 戒指1",
-        img: "earring.jfif",
+        img: "ring.jpg",
         type: "Ring",
     },
 ]

@@ -94,10 +94,10 @@ function NavigationMobile() {
                 <Nav className="d-flex align-items-center justify-content-end flex-grow-1">
 
                   {/* 耳環 */}
-                  <Nav.Link to="/home/categories/Earring" href="/home/categories/Earring" className="navlink">耳環</Nav.Link>
+                  <Nav.Link as={Link} to="/home/categories/Earring" href="/home/categories/Earring" className="navlink">耳環</Nav.Link>
 
                   {/* 戒指 */}
-                  <Nav.Link to="/home/categories/Ring" href="/home/categories/Ring" className="navlink">戒指</Nav.Link>
+                  <Nav.Link as={Link} to="/home/categories/Ring" href="/home/categories/Ring" className="navlink">戒指</Nav.Link>
                  
 
                   {/* 更多 */}

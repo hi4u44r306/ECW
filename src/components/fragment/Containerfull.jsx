@@ -1,12 +1,12 @@
 import React from 'react';
 import '../assets/scss/Containerfull.scss';
-import Copyright from './Footer';
+import Footer from './Footer';
 
 const Containerfull = ({children}) => {
     return (
         <div className={"Containerfull"}>
             {children}
-            <Copyright/>
+            <Footer/>
         </div>
     );
 }

@@ -24,31 +24,7 @@ import Menu from "../components/Pages/Menu";
 const App = () => {
 
     const {language} = useSelector(state => state.musicReducer);
-    // const [userid, setuserID] = useState();
-    // const db = firebase.firestore();
-    // const getUserInfo = (user) =>{  //從firestore取得 student 集合中選取符合user.uid的資訊
-    //     if(user){
-    //         db.collection('student').doc(user.uid).get().then( doc => {
-    //             setuserID(doc.id)
-    //         }, err =>{
-    //             console.log(err.message);
-    //         });
-    //     }else{
-    
-    //     }
-    //   }    
-    // firebase.auth().onAuthStateChanged(user => {
-    //     if(user){
-    //         db.collection('student').onSnapshot(snapshot =>{
-    //             getUserInfo(user);
-    //         }, err =>{
-    //             console.log(err.message);
-    //         });
-    //     }else{
-    //         getUserInfo();
-    //     }
-    // })
-
+   
     const dispatch = useDispatch();
     useEffect(()=>{
         if (language === null || language.includes("any")){
@@ -63,42 +39,18 @@ const App = () => {
             dispatch(setPlaylist(x))
         }
     },[dispatch, language]);
-    // const refresh = window.location.protocol + "//" + window.location.host +  window.location.pathname + `?id=${userid||''}` ;    
-    // window.history.replaceState({ path: refresh }, '', refresh); 
+    
 
     return (
         <>
             <Router>
             <NavigationMobile/>
                 <Switch>
-                    {/* <Route path="/" exact component={Login}/>
-                    <Route path="/home/signup" exact component={Signup}/> */}
-                    {/* <Route path="/home/menu">
-                        <NavigationMobile/>
-                        <Menu/>
-                        <Copyright/>
-                    </Route> */}
                     <Route path="/" exact component={Menu}/>
-                    <Route path="/home/leaderboard">
-                        <Leaderboard/>
-                    </Route>
-                    <Route path="/home/userinfo">
-                        <UserInfo/>
-                    </Route>
-                    <Route path="/home/contact">
-                        <Contact/>
-                    </Route>
-                    <Route path="/home/about">
-                        <About/>
-                    </Route>
-                    {/* <Route path="/home/game">
-                        <NavigationMobile/>
-                        <Game/>
-                        <Copyright/>
-                    </Route> */}
-                    <Route path="/home/dashboard">
-                        <Dashboard/>
-                    </Route>
+                    <Route path="/home/leaderboard" component={Leaderboard}/>
+                    <Route path="/home/userinfo" component={UserInfo}/>
+                    <Route path="/home/contact" component={Contact}/>
+                    <Route path="/home/about" component={About}/>
                     <Route path="/home" component={Home}/>
                 </Switch>
             </Router>
