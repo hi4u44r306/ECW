@@ -1,0 +1,24 @@
+.Container {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fcf8ec;
+  // background-image: url("../banner/banner02.svg");
+  height: 73vh;
+  overflow-y: auto;
+}
+
+.gamesection {
+  margin: auto;
+}
+
+// @media only screen and (max-width: 970px) {
+//   .Container {
+//     height: 60vh;
+//     -moz-user-select: none;
+//     -webkit-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//   }
+// }

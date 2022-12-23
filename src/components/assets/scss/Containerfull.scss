@@ -1,0 +1,18 @@
+.Containerfull {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fcf8ec;
+  height: 85vh;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 970px) {
+  .Containerfull {
+    height: 85vh;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

@@ -1,0 +1,226 @@
+.userinfo {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-weight: 800;
+}
+.userinfoptag {
+  color: #fc3434;
+}
+// Container
+.userinfocontainer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: -4px 10px 35px -1px rgba(175, 175, 175, 0.75);
+  justify-content: center;
+  gap: 20px;
+}
+.dailycirclecontainer {
+  display: flex;
+  height: 150px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: -4px 10px 35px -1px rgba(175, 175, 175, 0.75);
+  justify-content: center;
+  gap: 20px;
+}
+.currentdaycircle {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+}
+.dailycircle {
+  width: 60px;
+  height: 60px;
+}
+.abc {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.dailycircletext {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  align-items: center;
+  color: #3fa7d6;
+  gap: 10px;
+}
+.dailycircletext1 {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  align-items: center;
+  color: #fc3434;
+  font-size: 25px;
+}
+.dailycircletext2 {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  align-items: center;
+  color: #3fa7d6;
+  font-size: 15px;
+}
+.complete {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  align-items: center;
+  color: #fc3434;
+  font-size: 25px;
+}
+.notcomplete {
+  display: none;
+}
+.User {
+  font-family: "Nunito", sans-serif;
+}
+.loader {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.howtouseicon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  // background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.howtouseicontext {
+  font-size: 15px;
+  visibility: hidden;
+  width: 300px;
+  height: 40px;
+  background-color: rgb(255, 131, 131);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+
+  /* Position the howtouseicontext */
+  position: absolute;
+  bottom: 65px;
+  left: -22px;
+  z-index: 1;
+}
+.howtouseicon:hover .howtouseicontext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  visibility: visible;
+  box-shadow: -4px 10px 35px -1px rgba(175, 175, 175, 0.75);
+}
+.User-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf8ec;
+  height: 80vh;
+}
+.User-profileDetails {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: -4px 10px 35px -1px #3fa6d648;
+  // box-shadow: -4px 10px 35px -1px rgba(102, 102, 102, 0.75);
+  font-weight: 600;
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.User-profile-title {
+  color: #3fa7d6;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.User-profile-today {
+  font-family: "Nunito", sans-serif;
+  color: #fe4a49;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .User-profileDetails {
+    width: 90%;
+  }
+  .userinfocontainer {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: fit-content;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: -4px 10px 35px -1px rgba(175, 175, 175, 0.75);
+    justify-content: center;
+    gap: 20px;
+  }
+  .howtouseicon {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  .complete {
+    font-size: 18px;
+  }
+  .dailycircletext {
+    font-size: 10px;
+  }
+  .dailycircletext1 {
+    font-size: 10px;
+  }
+  .dailycircletext2 {
+    font-size: 10px;
+  }
+  .dailycirclecontainer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    height: 130px;
+    width: 80vw;
+  }
+  .currentdaycircle {
+    width: 80px;
+    height: 80px;
+  }
+  .dailycircle {
+    width: 40px;
+    height: 40px;
+  }
+  .User-Image {
+    display: none;
+  }
+}

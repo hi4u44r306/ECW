@@ -1,0 +1,154 @@
+.classtitle {
+  font-family: "Nunito", sans-serif;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #2ba84a;
+  // background-color: #5098f6e7;
+  padding: 5px;
+  margin: 5px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+table {
+  font-size: 15px;
+}
+tbody {
+  font-size: 18px;
+}
+.leaderboard {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  // border: solid 10px rgb(255, 32, 32);
+  // padding: 10px;
+}
+.leaderboard > table > thead > tr > th > span > img {
+  width: 20px;
+}
+tbody > tr > td > b > span > img {
+  width: 20px;
+}
+.leaderboardmaintitle {
+  background-color: #ffd000;
+  border-radius: 20px;
+}
+.countdown {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #005b7f;
+  text-align: center;
+  align-items: center;
+  .countdownlabel {
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+  }
+}
+.loudspeaker1 {
+  width: 120px;
+  height: 120px;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.loudspeaker2 {
+  width: 120px;
+  height: 120px;
+}
+.prize {
+  font-family: "Nunito", sans-serif;
+  border: solid 5px #ffd000;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #f65050e7 !important;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.leaderboardtitle {
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 45px;
+  font-weight: 900;
+  color: #005b7f;
+  text-align: center;
+  align-items: center;
+}
+.coltitle {
+  width: 25vw;
+  padding: 15px;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: 900;
+  color: #005b7f;
+  text-align: center;
+  align-items: center;
+}
+.coltitlerank {
+  width: 18vw;
+  padding: 15px;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: 900;
+  color: #005b7f;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  tbody {
+    font-size: 11px;
+  }
+  table {
+    font-size: 11px;
+  }
+  .leaderboard > table > thead > tr > th > span > img {
+    width: 13px;
+  }
+  tbody > tr > td > b > span > img {
+    width: 13px;
+  }
+  .loudspeaker1 {
+    width: 40px;
+    height: 40px;
+  }
+  .loudspeaker2 {
+    width: 40px;
+    height: 40px;
+  }
+  .leaderboardtitle {
+    font-size: 30px;
+  }
+  .prize {
+    font-size: 10px;
+  }
+  .classtitle {
+    font-size: 10px;
+  }
+  .coltitle {
+    font-size: 10px;
+  }
+  .coltitlerank {
+    font-size: 10px;
+  }
+  .countdown > .countdownlabel {
+    font-size: 15px;
+  }
+  .card {
+    height: 100%;
+  }
+}

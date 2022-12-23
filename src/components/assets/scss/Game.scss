@@ -1,0 +1,319 @@
+:root {
+  --small-font: 18px;
+  --medium-font: 20px;
+  --btn-weight: 700;
+  --gamewidth: 60vw;
+}
+.gamenotification {
+  width: auto;
+}
+.questionbox {
+  padding: 20 0 20 0;
+  margin: 10px;
+  width: var(--gamewidth);
+  background-color: #edf7ff;
+}
+.questionsection {
+  border: solid 3px lightsteelblue;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+.questiontext {
+  font-size: var(--small-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #000000;
+  margin: 5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+.questionindex {
+  background-color: #ffaaaa;
+  font-size: var(--small-font);
+  padding: 10px;
+  color: #000000;
+  border-radius: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.題目 {
+  color: #005b7f;
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: var(--small-font);
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  margin: 10px;
+}
+.gamecontainer {
+  margin: var(--small-font);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.computer-btncontainer {
+  display: flex;
+  font-size: var(--small-font);
+  justify-content: center;
+}
+.mobile-btncontainer {
+  display: none;
+  font-size: var(--small-font);
+}
+.closebtn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.submitanswerbtn {
+  display: flex;
+  align-items: center;
+  box-shadow: -4px 10px 35px -1px rgba(176, 176, 176, 0.682);
+  background-color: #69b469;
+  color: #000000;
+  border-radius: 20px;
+  margin: 10px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: var(--btn-weight);
+}
+.recordingbtn {
+  box-shadow: -4px 10px 35px -1px rgba(176, 176, 176, 0.682);
+  // background-color: #39acff;
+  background-color: #e9f6ff;
+  color: #000000;
+  border-radius: 20px;
+  margin: 10px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: var(--btn-weight);
+}
+.goxjub {
+  width: 25px;
+  height: 25px;
+}
+.stoprecordbtn {
+  box-shadow: -4px 10px 35px -1px rgba(176, 176, 176, 0.682);
+  background-color: #ffb5b5;
+  color: #000000;
+  border-radius: 20px;
+  margin: 10px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: var(--btn-weight);
+}
+.nextquestionbtn {
+  box-shadow: -4px 10px 35px -1px rgba(176, 176, 176, 0.682);
+  background-color: #ff894e;
+  color: #000000;
+  border-radius: 20px;
+  margin: 10px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: var(--btn-weight);
+}
+.gamebox {
+  display: flex;
+  font-size: var(--small-font);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--gamewidth);
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #edf7ff;
+  padding: 20px;
+  z-index: 1000;
+}
+.boxtitle {
+  top: 0;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 5px;
+  color: #005b7f;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.gamenote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  box-shadow: -4px 10px 35px -1px rgba(176, 176, 176, 0.682);
+  height: fit-content;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: var(--small-font);
+  font-weight: 700;
+  color: #ff3d3d;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.notes {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: var(--small-font);
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.704);
+}
+.Game {
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b7b6b6;
+  padding: 50px;
+  z-index: 1000;
+}
+.gamecontainer {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 80vw;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.score-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--small-font);
+  align-items: center;
+}
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gamebtn {
+  width: 100%;
+  font-size: 18px;
+  color: #000000;
+  background-color: #ffe3c8;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ff0000;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #2f922f;
+}
+
+.incorrect {
+  background-color: #ff3333;
+}
+
+.gamebtn:hover {
+  background-color: #e6c69d;
+}
+
+.gamebtn:focus {
+  outline: none;
+}
+
+.gamebtn svg {
+  margin-right: 5px;
+}
+.notification {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 695px) {
+  .questionbox {
+    width: 90vw;
+  }
+  .gamebox {
+    width: 90vw;
+  }
+  .gamenotification {
+    width: 90%;
+  }
+  .boxtitle {
+    font-size: 20px;
+  }
+  .computer-btncontainer {
+    display: none;
+  }
+  .mobile-btncontainer {
+    display: flex;
+    justify-content: space-evenly;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

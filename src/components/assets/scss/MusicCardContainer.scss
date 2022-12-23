@@ -1,0 +1,14 @@
+.music-card-container{
+  background-color: #fcf8ec;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 970px) {
+  .music-card-container {
+    height: 100vh;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
